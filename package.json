@@ -1,0 +1,44 @@
+{
+  "name": "openapi-ts-typegen",
+  "version": "1.0.0",
+  "description": "Typescript type generator for OpenAPI specifications, generating requests and operation handler functions etc.",
+  "bin": "dist/cli.js",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist && rm -f tsconfig.tsbuildinfo",
+    "lint": "eslint src --ext js,ts --max-warnings 0",
+    "postbuild": "chmod u+x dist/cli.js",
+    "prepublish": "yarn clean && yarn build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henhal/openapi-ts-typegen.git"
+  },
+  "keywords": [
+    "OpenAPI",
+    "TypeScript",
+    "typegen",
+    "codegen",
+    "types",
+    "swagger"
+  ],
+  "author": "Henrik Hall",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/henhal/openapi-ts-typegen/issues"
+  },
+  "homepage": "https://github.com/henhal/openapi-ts-typegen#readme",
+  "dependencies": {
+    "@openapi-ts/request-types": "^1.1.0",
+    "openapi-typescript": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.0",
+    "@types/node": "^14.14.31",
+    "@typescript-eslint/eslint-plugin": "^4.17.0",
+    "@typescript-eslint/parser": "^4.17.0",
+    "eslint": "^7.21.0",
+    "ts-node": "^9.1.1",
+    "typescript": ">=3"
+  }
+}
