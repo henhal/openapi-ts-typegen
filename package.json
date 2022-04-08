@@ -1,6 +1,6 @@
 {
   "name": "openapi-ts-typegen",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Typescript type generator for OpenAPI specifications, generating requests and operation handler functions etc.",
   "bin": "dist/cli.js",
   "scripts": {
