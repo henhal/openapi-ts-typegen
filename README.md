@@ -1,4 +1,4 @@
-# openapi-ts-typegen
+# @openapi-ts/typegen
 Typescript type generator for OpenAPI specifications, generating types both for schemas and for all operations, 
 with operation specific request parameters.
 
